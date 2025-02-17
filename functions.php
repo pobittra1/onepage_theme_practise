@@ -48,3 +48,9 @@ function enqueue_font_awesome()
     wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css', array(), '6.4.2');
 }
 add_action('wp_enqueue_scripts', 'enqueue_font_awesome');
+
+
+function limitString($string, $maxLength = 74)
+{
+    return (strlen($string) > $maxLength) ? substr($string, 0, $maxLength) . "..." : $string;
+}

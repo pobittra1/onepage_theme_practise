@@ -6,3 +6,14 @@ img {
     padding: 10px 12px 16px 12px;
     border-bottom: 1px solid gray;
 }
+
+
+.hero-sec {
+    background-color: #329CAC;
+}
+
+
+.card img {
+    height: 50px;
+    object-fit: contain;
+}
