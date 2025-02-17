@@ -40,3 +40,11 @@ function onepage_customization_register($wp_customize)
 
 
 add_action('customize_register', 'onepage_customization_register');
+
+
+// link up with fontawesome
+function enqueue_font_awesome()
+{
+    wp_enqueue_style('font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css', array(), '6.4.2');
+}
+add_action('wp_enqueue_scripts', 'enqueue_font_awesome');

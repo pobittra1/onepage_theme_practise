@@ -15,7 +15,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <div id="header-area">
+    <div id="header-area" class="for-border">
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-md-3">
